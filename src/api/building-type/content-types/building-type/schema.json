@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::project.project",
-      "inversedBy": "building_types"
+      "mappedBy": "building_types"
     }
   }
 }
