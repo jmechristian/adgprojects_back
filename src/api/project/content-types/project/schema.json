@@ -52,15 +52,18 @@
     "link": {
       "type": "string"
     },
-    "subcategories": {
+    "createBy": {
+      "type": "string"
+    },
+    "subcategory": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::subcategory.subcategory",
       "inversedBy": "projects"
     },
-    "building_types": {
+    "building_type": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::building-type.building-type",
       "inversedBy": "projects"
     },
@@ -69,9 +72,6 @@
       "relation": "manyToMany",
       "target": "api::project-type.project-type",
       "inversedBy": "projects"
-    },
-    "createBy": {
-      "type": "string"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project-type",
     "pluralName": "project-types",
-    "displayName": "Project Type"
+    "displayName": "Project Type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,7 +19,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::project.project",
-      "mappedBy": "project_types"
+      "inversedBy": "project_types"
     }
   }
 }

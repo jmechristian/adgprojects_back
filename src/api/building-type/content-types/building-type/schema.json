@@ -4,7 +4,8 @@
   "info": {
     "singularName": "building-type",
     "pluralName": "building-types",
-    "displayName": "Building Type"
+    "displayName": "Building Type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,9 +17,9 @@
     },
     "projects": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::project.project",
-      "mappedBy": "building_types"
+      "mappedBy": "building_type"
     }
   }
 }
