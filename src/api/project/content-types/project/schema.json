@@ -40,12 +40,6 @@
       "type": "boolean",
       "default": false
     },
-    "hero": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images", "videos"]
-    },
     "link": {
       "type": "string"
     },
@@ -79,9 +73,9 @@
     "below_text_content": {
       "type": "dynamiczone",
       "components": [
+        "image-rows.full-width-image",
         "image-rows.left-split-row",
-        "image-rows.right-split-row",
-        "image-rows.full-width-image"
+        "image-rows.right-split-row"
       ]
     },
     "above_quote": {
@@ -91,6 +85,11 @@
         "image-rows.left-split-row",
         "image-rows.right-split-row"
       ]
+    },
+    "Hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image-rows.full-width-image"
     }
   }
 }
