@@ -14,6 +14,7 @@
     "@strapi/plugin-users-permissions": "4.1.12",
     "@strapi/strapi": "4.1.12",
     "pg": "^8.6.0",
+    "strapi-plugin-populate-deep": "^0.1.2",
     "strapi-provider-upload-do": "^3.6.6",
     "strapi-provider-upload-dos": "^4.0.5"
   },
