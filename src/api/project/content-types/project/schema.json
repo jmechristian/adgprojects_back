@@ -86,7 +86,7 @@
         "image-rows.right-split-row"
       ]
     },
-    "Hero": {
+    "hero": {
       "type": "component",
       "repeatable": false,
       "component": "image-rows.full-width-image"
