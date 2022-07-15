@@ -79,12 +79,20 @@
     "quote_attribution": {
       "type": "string"
     },
-    "image_rows": {
+    "below_text_content": {
       "type": "dynamiczone",
       "components": [
         "image-rows.left-split-row",
         "image-rows.right-split-row",
         "image-rows.full-width-image"
+      ]
+    },
+    "above_quote": {
+      "type": "dynamiczone",
+      "components": [
+        "image-rows.full-width-image",
+        "image-rows.left-split-row",
+        "image-rows.right-split-row"
       ]
     }
   }
