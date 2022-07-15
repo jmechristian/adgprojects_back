@@ -40,9 +40,9 @@
       "type": "boolean",
       "default": false
     },
-    "gallery": {
+    "hero": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -79,21 +79,11 @@
     "quote_attribution": {
       "type": "string"
     },
-    "left_split_row": {
+    "image_rows": {
       "type": "dynamiczone",
       "components": [
-        "image-rows.left-split-row"
-      ]
-    },
-    "split_right_row": {
-      "type": "dynamiczone",
-      "components": [
-        "image-rows.right-split-row"
-      ]
-    },
-    "full_width_image": {
-      "type": "dynamiczone",
-      "components": [
+        "image-rows.left-split-row",
+        "image-rows.right-split-row",
         "image-rows.full-width-image"
       ]
     }
