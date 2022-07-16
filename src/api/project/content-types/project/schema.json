@@ -27,11 +27,6 @@
       "type": "string",
       "required": true
     },
-    "hero": {
-      "allowedTypes": ["images", "files", "videos", "audios"],
-      "type": "media",
-      "multiple": false
-    },
     "description": {
       "type": "text"
     },
@@ -89,6 +84,12 @@
         "image-rows.full-width-image",
         "image-rows.left-split-row",
         "image-rows.right-split-row"
+      ]
+    },
+    "hero": {
+      "type": "dynamiczone",
+      "components": [
+        "image-rows.full-width-image"
       ]
     }
   }
