@@ -91,6 +91,16 @@
       "components": [
         "image-rows.full-width-image"
       ]
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

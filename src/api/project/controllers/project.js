@@ -33,34 +33,29 @@ const uid = "api::project.project";
 
 // see @urbandale's post for context: https://forum.strapi.io/t/strapi-v4-populate-media-and-dynamiczones-from-components/12670/26
 const components = {
-  full_width: true, // get data for media item field called "Image"
-  vertical_left: true, // get data for media item field called "Image"
-  horizontal_right: true, // get data for media item field called "Image"
-  horizontal_left: true, // get data for media item field called "Image"
-  vertical_right: true, // get data for media item field called "Image"
-  below_text_content: {
-    // a dynamic zone with different components,
-    // and those components might have some repeatable sub-component too
-    // We only seem to need to add the sub-components...
-    populate: {
-      full_width: true, // get data for media item field called "Image"
-      vertical_left: true, // get data for media item field called "Image"
-      horizontal_right: true, // get data for media item field called "Image"
-      horizontal_left: true, // get data for media item field called "Image"
-      vertical_right: true, // media field called "Image"
-      // Buttons: {
-      //   // repeatable sub-component called "Buttons" used in a dynamic zone component
-      //   populate: {
-      //     page: true, // the Button component has a relation to a page item, so populate that...
-      //   },
-      // },
-      // Icons: true, // another repeatable sub-component used in a dynamic zone component
-    },
-  },
+  hero_image: true,
   department: true,
   subcategory: true,
   building_type: true,
   project_types: { populate: { type: true } },
+  above_quote: {
+    populate: {
+      full_width: true,
+      vertical_left: true,
+      horizontal_right: true,
+      horizontal_left: true,
+      vertical_right: true,
+    },
+  },
+  below_text_content: {
+    populate: {
+      full_width: true,
+      vertical_left: true,
+      horizontal_right: true,
+      horizontal_left: true,
+      vertical_right: true,
+    },
+  },
 };
 
 module.exports = createCoreController(uid, () => {
