@@ -33,7 +33,7 @@ const uid = "api::project.project";
 
 // see @urbandale's post for context: https://forum.strapi.io/t/strapi-v4-populate-media-and-dynamiczones-from-components/12670/26
 const components = {
-  hero_image: true,
+  hero: true,
   department: true,
   subcategory: true,
   building_type: true,

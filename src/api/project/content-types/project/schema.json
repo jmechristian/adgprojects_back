@@ -87,12 +87,6 @@
       ]
     },
     "hero": {
-      "type": "dynamiczone",
-      "components": [
-        "image-rows.full-width-image"
-      ]
-    },
-    "hero_image": {
       "allowedTypes": [
         "images",
         "files",
