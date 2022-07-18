@@ -102,6 +102,9 @@
     },
     "collaborators": {
       "type": "text"
+    },
+    "size": {
+      "type": "string"
     }
   }
 }
