@@ -67,7 +67,7 @@ module.exports = createCoreController(uid, () => {
         const entity = await strapi.entityService.findMany(uid, {
           ...ctx.query,
           populate: components,
-          limit: 50,
+          pageSize: 60,
         });
         const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
 
