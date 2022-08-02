@@ -35,7 +35,7 @@ const uid = "api::project.project";
 const components = {
   hero: true,
   department: true,
-  subcategory: { populate: { type: true } },
+  subcategories: { populate: { type: true } },
   building_type: true,
   project_types: { populate: { type: true } },
   above_quote: {
