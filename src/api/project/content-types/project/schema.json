@@ -46,12 +46,6 @@
     "createBy": {
       "type": "string"
     },
-    "subcategory": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::subcategory.subcategory",
-      "inversedBy": "projects"
-    },
     "building_type": {
       "type": "relation",
       "relation": "manyToOne",
@@ -118,6 +112,12 @@
       ],
       "type": "media",
       "multiple": true
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::subcategory.subcategory",
+      "inversedBy": "projects"
     }
   }
 }
