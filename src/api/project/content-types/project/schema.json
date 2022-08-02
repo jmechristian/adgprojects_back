@@ -105,6 +105,9 @@
     },
     "size": {
       "type": "string"
+    },
+    "grid_order": {
+      "type": "integer"
     }
   }
 }
