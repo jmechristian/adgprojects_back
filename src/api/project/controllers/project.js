@@ -56,6 +56,7 @@ const components = {
       vertical_right: true,
     },
   },
+  gallery: true,
 };
 
 module.exports = createCoreController(uid, () => {
