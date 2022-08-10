@@ -28,12 +28,6 @@
         "videos",
         "audios"
       ]
-    },
-    "left_caption": {
-      "type": "string"
-    },
-    "right_caption": {
-      "type": "string"
     }
   }
 }
