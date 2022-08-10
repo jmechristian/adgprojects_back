@@ -2,19 +2,24 @@
   "collectionName": "components_image_rows_full_width_images",
   "info": {
     "displayName": "Full Width Image",
-    "icon": "arrows-alt-h"
+    "icon": "arrows-alt-h",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "full_width": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "caption": {
+      "type": "string"
     }
   }
 }

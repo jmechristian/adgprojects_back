@@ -2,29 +2,38 @@
   "collectionName": "components_image_rows_left_split_rows",
   "info": {
     "displayName": "Left Split Row",
-    "icon": "arrow-left"
+    "icon": "arrow-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "vertical_left": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "horizontal_right": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "left_caption": {
+      "type": "string"
+    },
+    "right_caption": {
+      "type": "string"
     }
   }
 }
