@@ -86,9 +86,7 @@
       "required": false,
       "allowedTypes": [
         "images",
-        "files",
-        "videos",
-        "audios"
+        "videos"
       ]
     },
     "location": {
@@ -104,20 +102,24 @@
       "type": "integer"
     },
     "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "subcategories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::subcategory.subcategory",
       "inversedBy": "projects"
+    },
+    "hero_caption": {
+      "type": "string"
     }
   }
 }
