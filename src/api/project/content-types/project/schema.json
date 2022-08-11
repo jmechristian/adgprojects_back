@@ -117,9 +117,6 @@
       "relation": "manyToMany",
       "target": "api::subcategory.subcategory",
       "inversedBy": "projects"
-    },
-    "hero_caption": {
-      "type": "string"
     }
   }
 }
